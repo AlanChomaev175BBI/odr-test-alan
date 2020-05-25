@@ -140,10 +140,10 @@ window.addEventListener('load', function () {
         arg.Inputs.input1.Values.push(p);
  
         jQuery.ajax({
-            url: "<https://odr-test-alan.azure-api.net/execute?api-version=2.0&details=true/score>",
+            url: "https://odr-test-alan.azure-api.net/execute?api-version=2.0&details=true/score",
             beforeSend: function (xhrObj) {
                 xhrObj.setRequestHeader("Content-Type", "application/json;charset=utf-8");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "<a0bb2b9b63bf46608d01d5ac2c79e803>");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "a0bb2b9b63bf46608d01d5ac2c79e803");
  
             },
             type: "POST",
